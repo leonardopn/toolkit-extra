@@ -13,7 +13,8 @@
         "noImplicitReturns": true, // Ative a verificação de caminhos de código que não retornam explicitamente em uma função.
         "noFallthroughCasesInSwitch": true, // Ative a verificação de casos de queda em declarações switch.
         "noUncheckedIndexedAccess": true, // Adicione 'undefined' a um tipo quando acessado usando um índice.
-        "strictPropertyInitialization": true // Verifique as propriedades da classe que são declaradas, mas não são definidas no construtor.
+        "strictPropertyInitialization": true, // Verifique as propriedades da classe que são declaradas, mas não são definidas no construtor.
+        "types": ["vitest/globals"]
     },
     "include": [
         "src" // Especifique a pasta onde seus arquivos de origem estão localizados.
