@@ -6,7 +6,8 @@
         "Module: String",
         "Module: Timeout",
         "Module: Math",
-        "Module: Regex"
+        "Module: Regex",
+        "Type: IBrazilianState"
     ],
     "editor.inlineSuggest.showToolbar": "onHover"
 }
