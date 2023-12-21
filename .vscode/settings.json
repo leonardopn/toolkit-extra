@@ -1,4 +1,4 @@
 {
-    "conventionalCommits.scopes": ["Module: Array", "Module: Object", "Module: Random"],
+    "conventionalCommits.scopes": ["Module: Array", "Module: Object", "Module: Random", "Module: String"],
     "editor.inlineSuggest.showToolbar": "onHover"
 }
