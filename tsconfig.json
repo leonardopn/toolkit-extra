@@ -14,6 +14,7 @@
         "noFallthroughCasesInSwitch": true, // Ative a verificação de casos de queda em declarações switch.
         "noUncheckedIndexedAccess": true, // Adicione 'undefined' a um tipo quando acessado usando um índice.
         "strictPropertyInitialization": true, // Verifique as propriedades da classe que são declaradas, mas não são definidas no construtor.
+        "resolveJsonModule": true, // Permite importar e ler JSON em código TS.
         "types": ["vitest/globals"]
     },
     "include": [
