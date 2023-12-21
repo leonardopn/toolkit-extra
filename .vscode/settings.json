@@ -4,7 +4,8 @@
         "Module: Object",
         "Module: Random",
         "Module: String",
-        "Module: Timeout"
+        "Module: Timeout",
+        "Module: Math"
     ],
     "editor.inlineSuggest.showToolbar": "onHover"
 }
