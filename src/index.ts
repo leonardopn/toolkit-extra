@@ -5,3 +5,4 @@ export { capitalizeFirstLetterOfEachWord, formatCNPJ, getNameInitials, hideEmail
 export { sleep, timeoutAsync } from "./modules/Timeout";
 export { average, mode } from "./modules/Math";
 export { verifyMaskedBrazilianPhones } from "./modules/Regex";
+export { getBrazilianStateByInitials, getBrazilianStateByName, getBrazilianStates } from "./modules/Address";
