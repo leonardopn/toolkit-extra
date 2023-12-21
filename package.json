@@ -24,7 +24,8 @@
     },
     "dependencies": {
         "lodash": "^4.17.21",
-        "uuid": "^9.0.1"
+        "uuid": "^9.0.1",
+        "zod": "^3.22.4"
     },
     "types": "dist/types/index.d.ts",
     "files": [
