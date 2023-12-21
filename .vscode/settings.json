@@ -5,7 +5,8 @@
         "Module: Random",
         "Module: String",
         "Module: Timeout",
-        "Module: Math"
+        "Module: Math",
+        "Module: Regex"
     ],
     "editor.inlineSuggest.showToolbar": "onHover"
 }
