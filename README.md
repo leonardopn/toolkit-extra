@@ -56,7 +56,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - Address
   - [`getBrazilianStateByInitials`](./src/docs/getBrazilianStateByInitials.md) - Busca um estado brasileiro pela sua inicial.
   - [`getBrazilianStateByName`](./src/docs/getBrazilianStateByName.md) - Busca um estado brasileiro pelo seu nome.
-  - getBrazilianStates
+  - [`getBrazilianStates`](./src/docs/getBrazilianStateByName.md) - Função que retorna um array com todos os estados brasileiros.
 - Array
   - deleteDuplicate
   - generateArray
