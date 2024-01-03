@@ -59,7 +59,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`getBrazilianStates`](./src/docs/getBrazilianStates.md) - Função que retorna um array com todos os estados brasileiros.
 - Array
   - [`deleteDuplicate`](./src/docs/deleteDuplicate.md) - Função que remove elementos duplicados do array e retorna um novo array só com itens únicos.
-  - generateArray
+  - [`generateArray`](./src/docs/generateArray.md) - Função que cria um array de tamanho `n` já preenchido com valores.
   - getMinMax
   - repeatArray
   - isArrayTyped

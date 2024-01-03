@@ -51,6 +51,7 @@ export function getMinMax(
 }
 
 /**
+ * @description Função que cria um array de tamanho `n` já preenchido com valores.
  * @param creatorFn Função opcional que cria cada membro do array
  * @param n Número de termos que o array deve ter.
  * @returns Retorna um array de tamanho `n` com o conteúdo baseado na função criadora ou cada elemento será uma string UUIDV4 se `creatorFn` não for passado.
