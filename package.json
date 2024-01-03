@@ -3,10 +3,9 @@
     "version": "0.0.1",
     "description": "Biblioteca com funções extras ao javascript que eu sempre preciso em meus projetos.",
     "main": "dist/index.js",
-    "repository": "https://github.com/leonardopn/lodash-extra.git",
+    "repository": "https://github.com/leonardopn/toolkit-extra.git",
     "author": "Leonardo Petta do Nascimento <leonardocps9@gmail.com>",
     "license": "MIT",
-    "private": false,
     "scripts": {
         "dev": "nodemon",
         "test": "vitest",
@@ -32,5 +31,6 @@
     "types": "dist/types/index.d.ts",
     "files": [
         "/dist"
-    ]
+    ],
+    "packageManager": "yarn@4.0.2"
 }
