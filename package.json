@@ -2,7 +2,6 @@
     "name": "toolkit-extra",
     "version": "0.0.1",
     "description": "Biblioteca com funções extras ao javascript que eu sempre preciso em meus projetos.",
-    "main": "dist/index.js",
     "repository": "https://github.com/leonardopn/toolkit-extra.git",
     "author": "Leonardo Petta do Nascimento <leonardocps9@gmail.com>",
     "license": "MIT",
@@ -28,9 +27,48 @@
         "uuid": "^9.0.1",
         "zod": "^3.22.4"
     },
-    "types": "dist/types/index.d.ts",
+    "types": "dist/@types/index.d.ts",
     "files": [
         "/dist"
     ],
+    "exports": {
+        ".": "./dist",
+        "./address": "./dist/modules/Address",
+        "./array": "./dist/modules/Array",
+        "./math": "./dist/modules/Math",
+        "./object": "./dist/modules/Object",
+        "./random": "./dist/modules/Random",
+        "./regex": "./dist/modules/Regex",
+        "./string": "./dist/modules/String",
+        "./timeout": "./dist/modules/Timeout"
+    },
+    "typesVersions": {
+        "*": {
+            "address": [
+                "./dist/@types/modules/Address/index.d.ts"
+            ],
+            "array": [
+                "./dist/@types/modules/Array/index.d.ts"
+            ],
+            "math": [
+                "./dist/@types/modules/Math/index.d.ts"
+            ],
+            "object": [
+                "./dist/@types/modules/Object/index.d.ts"
+            ],
+            "random": [
+                "./dist/@types/modules/Random/index.d.ts"
+            ],
+            "regex": [
+                "./dist/@types/modules/Regex/index.d.ts"
+            ],
+            "string": [
+                "./dist/@types/modules/String/index.d.ts"
+            ],
+            "timeout": [
+                "./dist/@types/modules/Timeout/index.d.ts"
+            ]
+        }
+    },
     "packageManager": "yarn@4.0.2"
 }

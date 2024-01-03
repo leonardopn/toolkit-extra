@@ -7,7 +7,7 @@
         "forceConsistentCasingInFileNames": true, // Garanta que o uso de maiúsculas e minúsculas esteja correto nas importações.
         "declaration": true, // Gere arquivos .d.ts a partir dos arquivos TypeScript.
         "outDir": "./dist", // Especifique o diretório de saída para todos os arquivos gerados.
-        "declarationDir": "./dist/types", // Especifique o diretório de saída para os arquivos .d.ts gerados.
+        "declarationDir": "./dist/@types", // Especifique o diretório de saída para os arquivos .d.ts gerados.
         "noUnusedLocals": true, // Ative a verificação de variáveis locais não utilizadas.
         "noUnusedParameters": true, // Ative a verificação de parâmetros de função não utilizados.
         "noImplicitReturns": true, // Ative a verificação de caminhos de código que não retornam explicitamente em uma função.
