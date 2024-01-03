@@ -54,7 +54,7 @@ omitUndefinedProps({ foo: 1, bar: undefined }); // { foo: 1 }
 Estes são os módulos e suas respectivas documentações para cada função.
 
 - Address
-  - getBrazilianStateByInitials
+  - [`getBrazilianStateByInitials`](./src/docs/getBrazilianStateByInitials.md) - Busca um estado brasileiro pela sua inicial.
   - getBrazilianStateByName
   - getBrazilianStates
 - Array

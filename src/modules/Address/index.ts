@@ -11,7 +11,7 @@ export function getBrazilianStates() {
 
 /**
  * @description Busca um estado brasileiro pela sua inicial.
- * @param initials Inicias do estado que será buscado.
+ * @param initials Iniciais do estado que será buscado.
  * @returns Um objeto do tipo `IBrazilianState` ou `null`.
  */
 export function getBrazilianStateByInitials(initials?: string): IBrazilianState | null {
