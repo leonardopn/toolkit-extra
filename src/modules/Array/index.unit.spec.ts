@@ -1,4 +1,4 @@
-import { deleteDuplicate, getMinMax, isArrayTyped, moveElement } from ".";
+import { deleteDuplicate, getMinMax, isArrayTyped, moveElement, repeatArray } from ".";
 
 describe("UNIT - Testando utilitário de array", () => {
     describe("FUNÇÃO - deleteDuplicate", () => {
@@ -130,6 +130,42 @@ describe("UNIT - Testando utilitário de array", () => {
 
             expect(result.max).toBe(10);
             expect(result.min).toBe(10);
+        });
+    });
+
+    describe("FUNÇÃO - repeatArray", () => {
+        it("Deve repetir o array corretamente.", () => {
+            const array = [1, 2];
+
+            const result = repeatArray(array, 1);
+            const result2 = repeatArray(array, 2);
+            const result3 = repeatArray(array, 3);
+
+            expect(result).toStrictEqual([1, 2, 1, 2]);
+            expect(result2).toStrictEqual([1, 2, 1, 2, 1, 2]);
+            expect(result3).toStrictEqual([1, 2, 1, 2, 1, 2, 1, 2]);
+        });
+
+        it("Deve manter o array igual, já que o valor de repetição é igual ou menor que 0.", () => {
+            const array = [1, 2];
+
+            const result = repeatArray(array, 0);
+            const result2 = repeatArray(array, -10);
+
+            expect(result).toStrictEqual([1, 2]);
+            expect(result2).toStrictEqual([1, 2]);
+        });
+
+        it("Deve manter o array vazio, já que ele não tem membros.", () => {
+            const array: number[] = [];
+
+            const result = repeatArray(array, 10);
+            const result2 = repeatArray(array, -10);
+            const result3 = repeatArray(array, 0);
+
+            expect(result).toStrictEqual([]);
+            expect(result2).toStrictEqual([]);
+            expect(result3).toStrictEqual([]);
         });
     });
 });
