@@ -62,7 +62,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`generateArray`](./src/docs/generateArray.md) - Função que cria um array de tamanho `n` já preenchido com valores.
   - [`getMinMax`](./src/docs/getMinMax.md) - Função que retorna o valor mínimo e máximo de um array de números.
   - [`repeatArray`](./src/docs/repeatArray.md) - Função que pega um array inicial e repete seu conteúdo em um novo array `n` vezes.
-  - isArrayTyped
+  - [`isArrayTyped`](./src/docs/isArrayTyped.md) - Função que valida se todos os elementos de um array são de um determinado tipo.
   - moveElement
 - **Math**
   - average
