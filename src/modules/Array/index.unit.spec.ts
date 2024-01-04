@@ -1,4 +1,4 @@
-import { deleteDuplicate, isArrayTyped, moveElement } from ".";
+import { deleteDuplicate, getMinMax, isArrayTyped, moveElement } from ".";
 
 describe("UNIT - Testando utilitário de array", () => {
     describe("FUNÇÃO - deleteDuplicate", () => {
@@ -92,6 +92,44 @@ describe("UNIT - Testando utilitário de array", () => {
             const result = isArrayTyped<string>(array, () => typeof array[0] === "string");
 
             expect(result).toBeTruthy();
+        });
+    });
+
+    describe("FUNÇÃO - getMinMax", () => {
+        it("Deve retornar os valores mínimos e máximos de um array corretamente", () => {
+            const array = [1, 2];
+
+            const result = getMinMax(array);
+
+            expect(result.max).toBe(2);
+            expect(result.min).toBe(1);
+        });
+
+        it("Deve retornar undefined se o array passado for vazio", () => {
+            const array: number[] = [];
+
+            const result = getMinMax(array);
+
+            expect(result.max).toBeUndefined();
+            expect(result.min).toBeUndefined();
+        });
+
+        it("Deve retornar que o valor mínimo e máximo são iguais", () => {
+            const array: number[] = [1];
+
+            const result = getMinMax(array);
+
+            expect(result.max).toBe(1);
+            expect(result.min).toBe(1);
+        });
+
+        it("Deve retornar o valor padrão caso ele não encontre o mínimo e o máximo", () => {
+            const array: number[] = [];
+
+            const result = getMinMax(array, 10);
+
+            expect(result.max).toBe(10);
+            expect(result.min).toBe(10);
         });
     });
 });
