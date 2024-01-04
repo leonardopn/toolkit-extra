@@ -65,7 +65,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`isArrayTyped`](./src/docs/isArrayTyped.md) - Função que valida se todos os elementos de um array são de um determinado tipo.
   - [`moveElement`](./src/docs/moveElement.md) - Função que move um elemento para outra posição dentro de um array.
 - **Math**
-  - average
+  - [`average`](./src/docs/average.md) - Função para calcular a média de valores em um array de números.
   - mode
 - **Object**
   - isClassInstance

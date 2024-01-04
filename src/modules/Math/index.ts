@@ -2,11 +2,11 @@ import { sum } from "lodash";
 import { mode as mathjsMode } from "mathjs";
 
 /**
- * @description Função para calcular a média entre um array de números.
+ * @description Função para calcular a média de valores em um array de números.
  * @param data Um array de números.
  * @returns A média do array passado.
  * @example
- * const array = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];;
+ * const array = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
  * const array2 = [0, 0, 0, 0, 0, 0, 0, 0];
  * average(array) //3;
  * average(array2) //0;
