@@ -62,6 +62,12 @@ describe("UNIT - Testando utilitário de array", () => {
             expect(t2).toThrowError();
         });
 
+        test("Isso deve manter o array igual, já que moveu o elemento para a mesa posição.", () => {
+            const array = moveElement([1, 2, 3, 4], 2, 1);
+
+            expect(array).toEqual([1, 2, 3, 4]);
+        });
+
         test("Isso deve substituir o array original", () => {
             const array2 = moveElement(arrayToTest, 2, 2, false);
 
