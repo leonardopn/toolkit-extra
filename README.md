@@ -63,7 +63,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`getMinMax`](./src/docs/getMinMax.md) - Função que retorna o valor mínimo e máximo de um array de números.
   - [`repeatArray`](./src/docs/repeatArray.md) - Função que pega um array inicial e repete seu conteúdo em um novo array `n` vezes.
   - [`isArrayTyped`](./src/docs/isArrayTyped.md) - Função que valida se todos os elementos de um array são de um determinado tipo.
-  - moveElement
+  - [`moveElement`](./src/docs/moveElement.md) - Função que move um elemento para outra posição dentro de um array.
 - **Math**
   - average
   - mode

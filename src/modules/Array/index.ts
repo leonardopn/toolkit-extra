@@ -86,7 +86,7 @@ export function isArrayTyped<T>(array: any[], evidentiaryFn: (item: T, index: nu
  * @param element O elemento que iremos mover dentro do array.
  * @param newPosition A nova posição que o elemento deve ter no array.
  * @param returnNewArray Um valor opcional que determina se devemos retorna um novo array, ou se o array original deve ser retornado. Padrão: `true`.
- * @returns O array original ou um novo array, porém o valor indicado em `element`foi movido para uma posição especificada em `nemPosition`.
+ * @returns O array original ou um novo array, porém o valor indicado em `element` foi movido para uma posição especificada em `newPosition`.
  */
 export function moveElement<T>(array: T[], element: T, newPosition: number, returnNewArray = true) {
     if (returnNewArray) {
