@@ -2,7 +2,7 @@ import { max, min } from "lodash";
 import { v4 } from "uuid";
 
 /**
- * @description Função que pega um array inicial e repete seu conteúdo em um novo array `n`vezes.
+ * @description Função que pega um array inicial e repete seu conteúdo em um novo array `n` vezes.
  * @param array Array que será a base.
  * @param times Vezes que o array deve ser repetido.
  * @returns Um novo array do mesmo tipo com os dados repetidos `n` vezes.
@@ -10,7 +10,9 @@ import { v4 } from "uuid";
 export function repeatArray<T>(array: T[], times: number): T[] {
     let result: any[] = [];
 
-    for (let i = 0; i < times; i++) {
+    if (times <= 0) return result.concat(array);
+
+    for (let i = 0; i <= times; i++) {
         result = result.concat(array);
     }
 
