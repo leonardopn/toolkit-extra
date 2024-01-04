@@ -53,35 +53,35 @@ omitUndefinedProps({ foo: 1, bar: undefined }); // { foo: 1 }
 
 Estes são os módulos e suas respectivas documentações para cada função.
 
-- Address
+- **Address**
   - [`getBrazilianStateByInitials`](./src/docs/getBrazilianStateByInitials.md) - Busca um estado brasileiro pela sua inicial.
   - [`getBrazilianStateByName`](./src/docs/getBrazilianStateByName.md) - Busca um estado brasileiro pelo seu nome.
   - [`getBrazilianStates`](./src/docs/getBrazilianStates.md) - Função que retorna um array com todos os estados brasileiros.
-- Array
+- **Array**
   - [`deleteDuplicate`](./src/docs/deleteDuplicate.md) - Função que remove elementos duplicados do array e retorna um novo array só com itens únicos.
   - [`generateArray`](./src/docs/generateArray.md) - Função que cria um array de tamanho `n` já preenchido com valores.
   - [`getMinMax`](./src/docs/getMinMax.md) - Função que retorna o valor mínimo e máximo de um array de números.
   - repeatArray
   - isArrayTyped
   - moveElement
-- Math
+- **Math**
   - average
   - mode
-- Object
+- **Object**
   - isClassInstance
   - omitProp
   - omitUndefinedProps
-- Random
+- **Random**
   - getRandomNumber
-- Regex
+- **Regex**
   - verifyMaskedBrazilianPhones
-- String
+- **String**
   - capitalizeFirstLetterOfEachWord
   - formatCNPJ
   - getNameInitials
   - hideEmail
   - isUrl
-- Timeout
+- **Timeout**
   - sleep
   - timeoutAsync
 
