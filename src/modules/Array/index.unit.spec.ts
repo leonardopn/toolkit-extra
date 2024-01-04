@@ -1,4 +1,5 @@
-import { deleteDuplicate, getMinMax, isArrayTyped, moveElement, repeatArray } from ".";
+import { deleteDuplicate, generateArray, getMinMax, isArrayTyped, moveElement, repeatArray } from ".";
+import { z } from "zod";
 
 describe("UNIT - Testando utilitário de array", () => {
     describe("FUNÇÃO - deleteDuplicate", () => {
@@ -172,6 +173,39 @@ describe("UNIT - Testando utilitário de array", () => {
             expect(result).toStrictEqual([]);
             expect(result2).toStrictEqual([]);
             expect(result3).toStrictEqual([]);
+        });
+    });
+
+    describe("FUNÇÃO - generateArray", () => {
+        it("Deve criar um array de 5 elementos de uuid.", () => {
+            const result = generateArray(5);
+            const schema = z.array(z.string().uuid()).min(5).max(5);
+
+            const t = () => {
+                schema.parse(result);
+            };
+
+            expect(t).not.toThrowError();
+        });
+
+        it("Deve criar um array de 5 elementos number iguais.", () => {
+            const result = generateArray(5, () => {
+                return 1;
+            });
+
+            const schema = z.array(z.number().min(1).max(1)).min(5).max(5);
+
+            const t = () => {
+                schema.parse(result);
+            };
+
+            expect(t).not.toThrowError();
+        });
+
+        it("Deve criar um array vazio.", () => {
+            const result = generateArray(0);
+
+            expect(result.length).toBe(0);
         });
     });
 });
