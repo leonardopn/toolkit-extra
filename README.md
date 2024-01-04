@@ -60,7 +60,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - Array
   - [`deleteDuplicate`](./src/docs/deleteDuplicate.md) - Função que remove elementos duplicados do array e retorna um novo array só com itens únicos.
   - [`generateArray`](./src/docs/generateArray.md) - Função que cria um array de tamanho `n` já preenchido com valores.
-  - getMinMax
+  - [`getMinMax`](./src/docs/getMinMax.md) - Função que retorna o valor mínimo e máximo de um array de números.
   - repeatArray
   - isArrayTyped
   - moveElement
