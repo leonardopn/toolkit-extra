@@ -8,6 +8,7 @@
     "scripts": {
         "dev": "nodemon",
         "test": "vitest",
+        "build": "tsc",
         "coverage": "vitest run --coverage"
     },
     "devDependencies": {
