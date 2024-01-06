@@ -77,7 +77,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`capitalizeFirstLetterOfEachWord`](./src/docs/capitalizeFirstLetterOfEachWord.md) - Maiusculiza a primeira letra de cada palavra no texto fornecido.
   - [`formatCNPJ`](./src/docs/formatCNPJ.md) - Formata uma string de CNPJ adicionando pontuação.
   - [`getNameInitials`](./src/docs/getNameInitials.md) - Função que retorna as iniciais do nome fornecido.
-  - hideEmail
+  - [`hideEmail`](./src/docs/hideEmail.md) - Oculta parte do email fornecido.
   - isUrl
 - **Timeout**
   - sleep
