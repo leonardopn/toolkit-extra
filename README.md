@@ -78,7 +78,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`formatCNPJ`](./src/docs/formatCNPJ.md) - Formata uma string de CNPJ adicionando pontuação.
   - [`getNameInitials`](./src/docs/getNameInitials.md) - Função que retorna as iniciais do nome fornecido.
   - [`hideEmail`](./src/docs/hideEmail.md) - Oculta parte do email fornecido.
-  - isUrl
+  - [`isUrl`](./src/docs/isUrl.md) - Verifica se o texto fornecido é uma URL válida.
 - **Timeout**
   - sleep
   - timeoutAsync
