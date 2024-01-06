@@ -49,8 +49,6 @@ omitUndefinedProps({ foo: 1, bar: undefined }); // { foo: 1 }
 
 ## :mag_right: Módulos
 
-**TODO: Melhorar essa parte com as documentações.**
-
 Estes são os módulos e suas respectivas documentações para cada função.
 
 - **Address**
