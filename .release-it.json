@@ -1,5 +1,8 @@
 {
-  "github": {
-    "release": true
-  }
+    "github": {
+        "release": true
+    },
+    "hooks": {
+        "before:init": ["npm run build", "npm run coverage"]
+    }
 }
