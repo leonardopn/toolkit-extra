@@ -11,7 +11,7 @@ jobs:
               with:
                   node-version: 18
             - name: Install dependencies
-              run: npm Install
+              run: npm install
             - name: Run tests and collect coverage
               run: npm run coverage
             - name: Upload coverage to Codecov
