@@ -74,7 +74,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - **Regex**
   - [`verifyMaskedBrazilianPhones`](./src/docs/verifyMaskedBrazilianPhones.md) - Valida um número de telefone brasileiro com mascaras (XX) XXXX-XXXX ou (XX) XXXXX-XXXX.
 - **String**
-  - capitalizeFirstLetterOfEachWord
+  - [`capitalizeFirstLetterOfEachWord`](./src/docs/capitalizeFirstLetterOfEachWord.md) - Maiusculiza a primeira letra de cada palavra no texto fornecido.
   - formatCNPJ
   - getNameInitials
   - hideEmail
