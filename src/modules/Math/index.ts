@@ -28,6 +28,8 @@ export function average(data: number[]): number {
  * mode(array2) //undefined;
  */
 export function mode(data: number[]): number[] | undefined {
+    if (data.length === 0) return undefined;
+
     //FIXME: Tipos do mathjs aparentam estar inconsistentes
     const result = mathjsMode(data) as unknown as number[];
 
