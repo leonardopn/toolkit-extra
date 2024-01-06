@@ -75,7 +75,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`verifyMaskedBrazilianPhones`](./src/docs/verifyMaskedBrazilianPhones.md) - Valida um número de telefone brasileiro com mascaras (XX) XXXX-XXXX ou (XX) XXXXX-XXXX.
 - **String**
   - [`capitalizeFirstLetterOfEachWord`](./src/docs/capitalizeFirstLetterOfEachWord.md) - Maiusculiza a primeira letra de cada palavra no texto fornecido.
-  - formatCNPJ
+  - [`formatCNPJ`](./src/docs/formatCNPJ.md) - Formata uma string de CNPJ adicionando pontuação.
   - getNameInitials
   - hideEmail
   - isUrl
