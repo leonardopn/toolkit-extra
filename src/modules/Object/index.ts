@@ -28,7 +28,7 @@ export function omitProp<T, Key extends keyof T>(obj: T, keys: Key[], keepOrigin
 }
 
 /**
- * Verifica se o valor é uma instância de classe
+ * Verifica se o valor passado é uma instância de classe.
  *
  * @param {any} value - O objeto a ser processado.
  * @returns `boolean` - Um booleano que indica se é ou não uma instância de classe.
