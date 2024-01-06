@@ -2,7 +2,7 @@ import { max, min } from "lodash";
 import { v4 } from "uuid";
 
 /**
- * @description Função que pega um array inicial e repete seu conteúdo em um novo array `n`vezes.
+ * @description Função que pega um array inicial e repete seu conteúdo em um novo array `n` vezes.
  * @param array Array que será a base.
  * @param times Vezes que o array deve ser repetido.
  * @returns Um novo array do mesmo tipo com os dados repetidos `n` vezes.
@@ -10,7 +10,9 @@ import { v4 } from "uuid";
 export function repeatArray<T>(array: T[], times: number): T[] {
     let result: any[] = [];
 
-    for (let i = 0; i < times; i++) {
+    if (times <= 0) return result.concat(array);
+
+    for (let i = 0; i <= times; i++) {
         result = result.concat(array);
     }
 
@@ -51,6 +53,7 @@ export function getMinMax(
 }
 
 /**
+ * @description Função que cria um array de tamanho `n` já preenchido com valores.
  * @param creatorFn Função opcional que cria cada membro do array
  * @param n Número de termos que o array deve ter.
  * @returns Retorna um array de tamanho `n` com o conteúdo baseado na função criadora ou cada elemento será uma string UUIDV4 se `creatorFn` não for passado.
@@ -83,7 +86,7 @@ export function isArrayTyped<T>(array: any[], evidentiaryFn: (item: T, index: nu
  * @param element O elemento que iremos mover dentro do array.
  * @param newPosition A nova posição que o elemento deve ter no array.
  * @param returnNewArray Um valor opcional que determina se devemos retorna um novo array, ou se o array original deve ser retornado. Padrão: `true`.
- * @returns O array original ou um novo array, porém o valor indicado em `element`foi movido para uma posição especificada em `nemPosition`.
+ * @returns O array original ou um novo array, porém o valor indicado em `element` foi movido para uma posição especificada em `newPosition`.
  */
 export function moveElement<T>(array: T[], element: T, newPosition: number, returnNewArray = true) {
     if (returnNewArray) {
