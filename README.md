@@ -81,7 +81,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`isUrl`](./src/docs/isUrl.md) - Verifica se o texto fornecido é uma URL válida.
 - **Timeout**
   - [`sleep`](./src/docs/sleep.md) - Função parecida com a função timeout do javascript, porém, retorna uma promise.
-  - timeoutAsync
+  - [`timeoutAsync`](./src/docs/timeoutAsync.md) - Função timeout para aguardar um tempo determinado porém, é assíncrona.
 
 ## :handshake: Contribuição
 
