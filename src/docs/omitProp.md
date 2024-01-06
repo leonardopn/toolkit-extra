@@ -9,7 +9,7 @@ Omite propriedades de um objeto.
 ## Uso
 
 ```ts
-import { omitProp } from "toolkit-extra/math";
+import { omitProp } from "toolkit-extra/object";
 
 const data = {
     foo: "hi",
