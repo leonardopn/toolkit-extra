@@ -80,7 +80,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`hideEmail`](./src/docs/hideEmail.md) - Oculta parte do email fornecido.
   - [`isUrl`](./src/docs/isUrl.md) - Verifica se o texto fornecido é uma URL válida.
 - **Timeout**
-  - sleep
+  - [`sleep`](./src/docs/sleep.md) - Função parecida com a função timeout do javascript, porém, retorna uma promise.
   - timeoutAsync
 
 ## :handshake: Contribuição
