@@ -66,7 +66,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
   - [`moveElement`](./src/docs/moveElement.md) - Função que move um elemento para outra posição dentro de um array.
 - **Math**
   - [`average`](./src/docs/average.md) - Função para calcular a média de valores em um array de números.
-  - mode
+  - [`mode`](./src/docs/mode.md) - Função que diz qual é a moda inclusa em um array de números. (Números que mais se repetem).
 - **Object**
   - isClassInstance
   - omitProp
