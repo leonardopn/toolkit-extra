@@ -70,7 +70,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - **Object**
   - [`isClassInstance`](./src/docs/isClassInstance.md) - Verifica se o valor passado é uma instância de classe.
   - [`omitProp`](./src/docs/omitProp.md) - Omite propriedades de um objeto.
-  - omitUndefinedProps
+  - [`omitUndefinedProps`](./src/docs/omitUndefinedProps.md) - Remove propriedades undefined de um objeto em todos os níveis de aninhamento.
 - **Random**
   - getRandomNumber
 - **Regex**
