@@ -74,7 +74,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - **Random**
   - [`getRandomNumber`](./src/docs/getRandomNumber.md) - Função que gera um número aleatório entre dois números.
 - **Regex**
-  - verifyMaskedBrazilianPhones
+  - [`verifyMaskedBrazilianPhones`](./src/docs/verifyMaskedBrazilianPhones.md) - Valida um número de telefone brasileiro com mascaras (XX) XXXX-XXXX ou (XX) XXXXX-XXXX.
 - **String**
   - capitalizeFirstLetterOfEachWord
   - formatCNPJ
