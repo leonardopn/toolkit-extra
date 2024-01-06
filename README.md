@@ -1,6 +1,23 @@
 
 # toolkit-extra
 
+[![npm](https://img.shields.io/npm/v/toolkit-extra)](https://www.npmjs.com/package/toolkit-extra)
+[![npm](https://img.shields.io/npm/dm/toolkit-extra)](https://www.npmjs.com/package/toolkit-extra)
+[![npm](https://img.shields.io/npm/l/toolkit-extra)](https://github.com/leonardopn/toolkit-extra/blob/main/LICENSE)
+
+![GitHub Issues](https://img.shields.io/github/issues/leonardopn/toolkit-extra)
+![GitHub Pull Requests](https://img.shields.io/github/issues-pr/leonardopn/toolkit-extra)
+![Última Atualização](https://img.shields.io/github/last-commit/leonardopn/toolkit-extra)
+![GitHub Forks](https://img.shields.io/github/forks/leonardopn/toolkit-extra)
+![GitHub Stars](https://img.shields.io/github/stars/leonardopn/toolkit-extra)
+
+[![codecov](https://codecov.io/gh/leonardopn/toolkit-extra/graph/badge.svg?token=SW854GY5YU)](https://codecov.io/gh/leonardopn/toolkit-extra)
+
+![TypeScript](https://badgen.net/npm/types/toolkit-extra)
+![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![Tamanho do Pacote](https://badgen.net/bundlephobia/minzip/toolkit-extra)
+
 Biblioteca com vários módulos de funções rápidas que não estão disponíveis no JavaScript, mas aposto que você adoraria que estivessem.
 
 ## :bulb: Motivação
