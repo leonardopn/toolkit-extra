@@ -38,15 +38,15 @@
     ],
     "main": "./dist/index.js",
     "exports": {
-        ".": "./dist",
-        "./address": "./dist/modules/Address",
-        "./array": "./dist/modules/Array",
-        "./math": "./dist/modules/Math",
-        "./object": "./dist/modules/Object",
-        "./random": "./dist/modules/Random",
-        "./regex": "./dist/modules/Regex",
-        "./string": "./dist/modules/String",
-        "./timeout": "./dist/modules/Timeout"
+        ".": "./dist/index.js",
+        "./address": "./dist/modules/Address/index.js",
+        "./array": "./dist/modules/Array/index.js",
+        "./math": "./dist/modules/Math/index.js",
+        "./object": "./dist/modules/Object/index.js",
+        "./random": "./dist/modules/Random/index.js",
+        "./regex": "./dist/modules/Regex/index.js",
+        "./string": "./dist/modules/String/index.js",
+        "./timeout": "./dist/modules/Timeout/index.js"
     },
     "typesVersions": {
         "*": {
