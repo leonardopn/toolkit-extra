@@ -8,7 +8,7 @@
     "scripts": {
         "dev": "nodemon",
         "test": "vitest",
-        "build": "tsc",
+        "build": "tsc --project tsconfig.build.json",
         "coverage": "vitest run --coverage",
         "release": "dotenv release-it"
     },
