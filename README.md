@@ -33,7 +33,7 @@ O foco dessa biblioteca sempre foi resolver **MEUS** problemas de código, entã
 
 ## :minidisc: Instalação
 
-Para instalar a biblioteca, é necessário que você tenha instalado algum gerenciador de pacotes como `npm` ou `yarn`.
+Para instalar a biblioteca, é necessário que você tenha instalado algum gerenciador de pacotes como `npm`, `yarn` ou `pnpm`.
 
 ```bash
 npm i toolkit-extra 
@@ -45,9 +45,27 @@ ou
 yarn add toolkit-extra
 ```
 
+ou
+
+```bash
+pnpm i toolkit-extra
+```
+
 ## :tada: Uso
 
-O uso é simples, cada função está dentro de um módulo ou grupo de funções. Então, para usar uma função, recomendo que você faça da seguinte forma:
+>Por ser uma biblioteca de utilitários, optei por fazer uma biblioteca é `commonjs` para poder fornecer compatibilidade com vários tipos de ambientes e evitar problemas.
+
+Cada função está dentro de um módulo ou grupo de funções. Então, para usar uma função, recomendo que você faça da seguinte forma:
+
+***CommonJS***
+
+```javascript
+const { omitUndefinedProps } = require("toolkit-extra/object");
+
+omitUndefinedProps({ foo: 1, bar: undefined }); // { foo: 1 }
+```
+
+***ESM***
 
 ```javascript
 import { omitUndefinedProps } from "toolkit-extra/object";
@@ -56,6 +74,16 @@ omitUndefinedProps({ foo: 1, bar: undefined }); // { foo: 1 }
 ```
 
 Se preferir, pode importar diretamente do módulo principal, porém isso pode resultar em uma importação um pouco mais pesada do que a importação modular.
+
+***CommonJS***
+
+```javascript
+const { omitUndefinedProps } = require("toolkit-extra");
+
+omitUndefinedProps({ foo: 1, bar: undefined }); // { foo: 1 }
+```
+
+***ESM***
 
 ```javascript
 import { omitUndefinedProps } from "toolkit-extra";
