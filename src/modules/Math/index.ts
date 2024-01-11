@@ -1,5 +1,3 @@
-import { sum } from "lodash";
-
 /**
  * @description Função para calcular a média de valores em um array de números.
  * @param data Um array de números.
@@ -13,7 +11,9 @@ import { sum } from "lodash";
 export function average(data: number[]): number {
     if (data.length === 0) return 0;
 
-    return sum(data) / data.length;
+    const sum = data.reduce((acc, item) => item + acc, 0);
+
+    return sum / data.length;
 }
 
 /**
