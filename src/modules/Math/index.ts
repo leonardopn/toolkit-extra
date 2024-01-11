@@ -1,5 +1,4 @@
 import { sum } from "lodash";
-import { mode as mathjsMode } from "mathjs";
 
 /**
  * @description Função para calcular a média de valores em um array de números.
@@ -30,8 +29,27 @@ export function average(data: number[]): number {
 export function mode(data: number[]): number[] | undefined {
     if (data.length === 0) return undefined;
 
-    //FIXME: Tipos do mathjs aparentam estar inconsistentes
-    const result = mathjsMode(data) as unknown as number[];
+    if (!data.every((item) => typeof item === "number"))
+        throw Error(`Todos os itens do array devem ser do tipo number. Recebido: ${data}`);
+
+    const occurrences: { [key: number]: number } = {};
+    let result: number[] = [];
+    let maxOccurrences = 0;
+
+    for (const number of data) {
+        occurrences[number] = (occurrences[number] || 0) + 1;
+        const occurrencesByCurrentNumber = occurrences[number];
+
+        if (occurrencesByCurrentNumber && occurrencesByCurrentNumber > maxOccurrences) {
+            maxOccurrences = occurrences[number] || maxOccurrences;
+        }
+    }
+
+    for (const number in occurrences) {
+        if (occurrences[number] === maxOccurrences) {
+            result.push(Number(number));
+        }
+    }
 
     return result.length === data.length ? (result.length === 1 ? result : undefined) : result;
 }
