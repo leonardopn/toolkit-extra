@@ -33,16 +33,19 @@ export default describe("UNIT - Testando utilitário de math", () => {
             const array2 = [1, 1, 2, 2];
             const array3 = [1, 1, 2, 2, 3, 3];
             const array4 = [1, 1];
+            const array5 = [1, 2, NaN, NaN];
 
             const result = mode(array);
             const result2 = mode(array2);
             const result3 = mode(array3);
             const result4 = mode(array4);
+            const result5 = mode(array5);
 
             expect(result).toEqual([3, 4]);
             expect(result2).toEqual([1, 2]);
             expect(result3).toEqual([1, 2, 3]);
             expect(result4).toEqual([1]);
+            expect(result5).toEqual([NaN]);
         });
 
         test("Isso deve retornar undefined, pois não há moda", () => {
@@ -59,6 +62,26 @@ export default describe("UNIT - Testando utilitário de math", () => {
             const result = mode(array);
 
             expect(result).toEqual([1]);
+        });
+
+        test("Isso deve emiti um erro, pois, o array não é do tipo `number`.", () => {
+            const array = [1, 2, 3, "hello", true];
+            const array2 = [1, 2, 3, 3, NaN];
+            const array3 = ["1", "1"];
+
+            const f1 = () => {
+                mode(array as any);
+            };
+            const f2 = () => {
+                mode(array2);
+            };
+            const f3 = () => {
+                mode(array3 as any);
+            };
+
+            expect(f1).toThrowError();
+            expect(f2).not.toThrowError();
+            expect(f3).toThrowError();
         });
     });
 });
