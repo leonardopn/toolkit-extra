@@ -41,7 +41,7 @@ export function mode(data: number[]): number[] | undefined {
         const occurrencesByCurrentNumber = occurrences[number];
 
         if (occurrencesByCurrentNumber && occurrencesByCurrentNumber > maxOccurrences) {
-            maxOccurrences = occurrences[number] || maxOccurrences;
+            maxOccurrences = occurrencesByCurrentNumber;
         }
     }
 
