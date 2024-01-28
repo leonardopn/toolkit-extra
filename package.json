@@ -31,32 +31,56 @@
         "uuid": "^9.0.1",
         "zod": "^3.22.4"
     },
-    "types": "dist/@types/index.d.ts",
     "files": [
-        "/dist"
+        "./dist"
     ],
     "main": "./dist/index.js",
     "exports": {
-        ".": "./dist/index.js",
-        "./address": "./dist/modules/Address/index.js",
-        "./array": "./dist/modules/Array/index.js",
-        "./math": "./dist/modules/Math/index.js",
-        "./object": "./dist/modules/Object/index.js",
-        "./random": "./dist/modules/Random/index.js",
-        "./regex": "./dist/modules/Regex/index.js",
-        "./string": "./dist/modules/String/index.js",
-        "./timeout": "./dist/modules/Timeout/index.js"
+        ".": {
+            "types": "./dist/@types/index.d.ts",
+            "default": "./dist/index.js"
+        },
+        "./address": {
+            "types": "./dist/@types/modules/Address/index.d.ts",
+            "default": "./dist/modules/Address/index.js"
+        },
+        "./array": {
+            "types": "./dist/@types/modules/Array/index.d.ts",
+            "default": "./dist/modules/Array/index.js"
+        },
+        "./math": {
+            "types": "./dist/@types/modules/Math/index.d.ts",
+            "default": "./dist/modules/Math/index.js"
+        },
+        "./object": {
+            "types": "./dist/@types/modules/Object/index.d.ts",
+            "default": "./dist/modules/Object/index.js"
+        },
+        "./random": {
+            "types": "./dist/@types/modules/Random/index.d.ts",
+            "default": "./dist/modules/Random/index.js"
+        },
+        "./regex": {
+            "types": "./dist/@types/modules/Regex/index.d.ts",
+            "default": "./dist/modules/Regex/index.js"
+        },
+        "./string": {
+            "types": "./dist/@types/modules/String/index.d.ts",
+            "default": "./dist/modules/String/index.js"
+        },
+        "./timeout": {
+            "types": "./dist/@types/modules/Timeout/index.d.ts",
+            "default": "./dist/modules/Timeout/index.js"
+        }
     },
+    "types": "./dist/@types/index.d.ts",
     "typesVersions": {
         "*": {
-            "address": [
-                "./dist/@types/modules/Address/index.d.ts"
+            "*": [
+                "./dist/@types/index.d.ts"
             ],
             "array": [
                 "./dist/@types/modules/Array/index.d.ts"
-            ],
-            "math": [
-                "./dist/@types/modules/Math/index.d.ts"
             ],
             "object": [
                 "./dist/@types/modules/Object/index.d.ts"
@@ -64,14 +88,20 @@
             "random": [
                 "./dist/@types/modules/Random/index.d.ts"
             ],
-            "regex": [
-                "./dist/@types/modules/Regex/index.d.ts"
-            ],
             "string": [
                 "./dist/@types/modules/String/index.d.ts"
             ],
             "timeout": [
                 "./dist/@types/modules/Timeout/index.d.ts"
+            ],
+            "math": [
+                "./dist/@types/modules/Math/index.d.ts"
+            ],
+            "regex": [
+                "./dist/@types/modules/Regex/index.d.ts"
+            ],
+            "address": [
+                "./dist/@types/modules/Address/index.d.ts"
             ]
         }
     },
