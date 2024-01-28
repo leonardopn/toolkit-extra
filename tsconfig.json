@@ -1,26 +1,26 @@
 {
     "compilerOptions": {
-        "target": "es2017", // Defina a versão do JavaScript alvo para a sua biblioteca.
-        "module": "commonjs", // Especifique o código do módulo gerado.
-        "strict": true, // Ative todas as opções de verificação de tipo estritas.
-        "esModuleInterop": true, // Emita JavaScript adicional para facilitar a importação de módulos CommonJS.
-        "forceConsistentCasingInFileNames": true, // Garanta que o uso de maiúsculas e minúsculas esteja correto nas importações.
-        "declaration": true, // Gere arquivos .d.ts a partir dos arquivos TypeScript.
-        "outDir": "./dist", // Especifique o diretório de saída para todos os arquivos gerados.
-        "declarationDir": "./dist/@types", // Especifique o diretório de saída para os arquivos .d.ts gerados.
-        "noUnusedLocals": true, // Ative a verificação de variáveis locais não utilizadas.
-        "noUnusedParameters": true, // Ative a verificação de parâmetros de função não utilizados.
-        "noImplicitReturns": true, // Ative a verificação de caminhos de código que não retornam explicitamente em uma função.
-        "noFallthroughCasesInSwitch": true, // Ative a verificação de casos de queda em declarações switch.
-        "noUncheckedIndexedAccess": true, // Adicione 'undefined' a um tipo quando acessado usando um índice.
-        "strictPropertyInitialization": true, // Verifique as propriedades da classe que são declaradas, mas não são definidas no construtor.
-        "resolveJsonModule": true, // Permite importar e ler JSON em código TS.
-        "types": ["vitest/globals"]
+        "target": "es2017", // Define a versão do JavaScript para a qual o TypeScript irá compilar seu código.
+        "module": "CommonJS", // Especifica o sistema de módulos para o qual o TypeScript irá gerar código.
+        "strict": true, // Ativa todas as opções de verificação de tipo estritas.
+        "esModuleInterop": true, // Emite JavaScript adicional para facilitar a importação de módulos CommonJS.
+        "forceConsistentCasingInFileNames": true, // Garante que o uso de maiúsculas e minúsculas esteja correto nas importações.
+        "declaration": true, // Gera arquivos .d.ts a partir dos arquivos TypeScript.
+        "outDir": "./dist", // Especifica o diretório de saída para todos os arquivos gerados.
+        "declarationDir": "./dist/@types", // Especifica o diretório de saída para os arquivos .d.ts gerados.
+        "noUnusedLocals": true, // Ativa a verificação de variáveis locais não utilizadas.
+        "noUnusedParameters": true, // Ativa a verificação de parâmetros de função não utilizados.
+        "noImplicitReturns": true, // Ativa a verificação de caminhos de código que não retornam explicitamente em uma função.
+        "noFallthroughCasesInSwitch": true, // Ativa a verificação de casos de queda em declarações switch.
+        "noUncheckedIndexedAccess": true, // Adiciona 'undefined' a um tipo quando acessado usando um índice.
+        "strictPropertyInitialization": true, // Verifica as propriedades da classe que são declaradas, mas não são definidas no construtor.
+        "resolveJsonModule": true, // Permite importar e ler JSON em código TypeScript.
+        "types": ["vitest/globals"] // Declaração dos tipos que serão incluídos no processo de compilação.
     },
     "include": [
-        "src" // Especifique a pasta onde seus arquivos de origem estão localizados.
+        "src" // Especifica a pasta onde seus arquivos de origem estão localizados.
     ],
     "exclude": [
-        "node_modules" // Exclua a pasta node_modules da compilação.
+        "node_modules" // Exclui a pasta node_modules da compilação.
     ]
 }
