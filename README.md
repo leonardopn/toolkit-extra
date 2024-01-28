@@ -15,7 +15,6 @@
 ![TypeScript](https://badgen.net/npm/types/toolkit-extra)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-![Tamanho do Pacote](https://badgen.net/bundlephobia/minzip/toolkit-extra)
 
 Biblioteca com vários módulos de funções rápidas que não estão disponíveis no JavaScript, mas aposto que você adoraria que estivessem.
 
@@ -53,7 +52,7 @@ pnpm i toolkit-extra
 
 ## :tada: Uso
 
->Por ser uma biblioteca de utilitários, optei por fazer uma biblioteca é `commonjs` para poder fornecer compatibilidade com vários tipos de ambientes e evitar problemas.
+>Por ser uma biblioteca de utilitários, optei por fazer uma biblioteca `commonjs` para poder fornecer compatibilidade com vários tipos de ambientes e evitar problemas.
 
 Cada função está dentro de um módulo ou grupo de funções. Então, para usar uma função, recomendo que você faça da seguinte forma:
 
