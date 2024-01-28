@@ -53,3 +53,24 @@ export function mode(data: number[]): number[] | undefined {
 
     return result.length === data.length ? (result.length === 1 ? result : undefined) : result;
 }
+
+/**
+ * @description Função que verifica se um número está presente em uma Progressão Aritmética (PA).
+ * @author Leonardo Petta do Nascimento - <leonardocps9@gmail.com>
+ * @param firstElement O primeiro elemento da PA.
+ * @param rate A razão de progressão.
+ * @param numToVerify O número que iremos verificar se está presente.
+ * @returns Um objeto contendo a posição e se se o número está presente.
+ */
+export function verifyPAPresence(firstElement: number, rate: number, numToVerify: number) {
+    if (rate === 0) {
+        throw new Error("Razão deve ser diferente de 0.");
+    }
+
+    //NOTE Verifica se o númeroBase está presente na PA
+    const position = (numToVerify - firstElement) / rate + 1;
+
+    const isPresent = position % 1 === 0 && position > 0;
+
+    return { isPresent, position: isPresent ? position : NaN };
+}
