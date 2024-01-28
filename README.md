@@ -15,7 +15,6 @@
 ![TypeScript](https://badgen.net/npm/types/toolkit-extra)
 ![Status](https://img.shields.io/badge/status-stable-brightgreen.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-![Tamanho do Pacote](https://badgen.net/bundlephobia/minzip/toolkit-extra)
 
 Biblioteca com vários módulos de funções rápidas que não estão disponíveis no JavaScript, mas aposto que você adoraria que estivessem.
 
@@ -53,7 +52,7 @@ pnpm i toolkit-extra
 
 ## :tada: Uso
 
->Por ser uma biblioteca de utilitários, optei por fazer uma biblioteca é `commonjs` para poder fornecer compatibilidade com vários tipos de ambientes e evitar problemas.
+>Por ser uma biblioteca de utilitários, optei por fazer uma biblioteca `commonjs` para poder fornecer compatibilidade com vários tipos de ambientes e evitar problemas.
 
 Cada função está dentro de um módulo ou grupo de funções. Então, para usar uma função, recomendo que você faça da seguinte forma:
 
@@ -109,6 +108,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - **Math**
   - [`average`](./src/docs/average.md) - Função para calcular a média de valores em um array de números.
   - [`mode`](./src/docs/mode.md) - Função que diz qual é a moda inclusa em um array de números. (Números que mais se repetem).
+  - [`verifyPAPresence`](./src/docs/verifyPAPresence.md) - Função que verifica se um número está presente em uma Progressão Aritmética (PA).
 - **Object**
   - [`isClassInstance`](./src/docs/isClassInstance.md) - Verifica se o valor passado é uma instância de classe.
   - [`omitProp`](./src/docs/omitProp.md) - Omite propriedades de um objeto.
