@@ -108,6 +108,7 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - **Math**
   - [`average`](./src/docs/average.md) - Função para calcular a média de valores em um array de números.
   - [`mode`](./src/docs/mode.md) - Função que diz qual é a moda inclusa em um array de números. (Números que mais se repetem).
+  - [`verifyPAPresence`](./src/docs/verifyPAPresence.md) - Função que verifica se um número está presente em uma Progressão Aritmética (PA).
 - **Object**
   - [`isClassInstance`](./src/docs/isClassInstance.md) - Verifica se o valor passado é uma instância de classe.
   - [`omitProp`](./src/docs/omitProp.md) - Omite propriedades de um objeto.
