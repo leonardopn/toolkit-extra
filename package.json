@@ -1,6 +1,6 @@
 {
 	"name": "toolkit-extra",
-	"version": "1.1.4",
+	"version": "1.2.0",
 	"description": "Biblioteca com funções extras ao javascript que eu sempre preciso em meus projetos.",
 	"repository": "https://github.com/leonardopn/toolkit-extra.git",
 	"author": "Leonardo Petta do Nascimento <leonardocps9@gmail.com>",
