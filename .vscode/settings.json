@@ -1,15 +1,14 @@
 {
-	"conventionalCommits.scopes": [
-		"Module: Array",
-		"Module: Object",
-		"Module: Random",
-		"Module: String",
-		"Module: Timeout",
-		"Module: Math",
-		"Module: Regex",
-		"Type: IBrazilianState",
-		"Module: Address",
-		"Module: UUID"
-	],
-	"editor.inlineSuggest.showToolbar": "onHover"
+    "conventionalCommits.scopes": [
+        "Module: Array",
+        "Module: Object",
+        "Module: Random",
+        "Module: String",
+        "Module: Timeout",
+        "Module: Math",
+        "Module: Regex",
+        "Type: IBrazilianState",
+        "Module: Address"
+    ],
+    "editor.inlineSuggest.showToolbar": "onHover"
 }

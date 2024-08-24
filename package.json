@@ -1,86 +1,82 @@
 {
-	"name": "toolkit-extra",
-	"version": "1.2.0",
-	"description": "Biblioteca com funções extras ao javascript que eu sempre preciso em meus projetos.",
-	"repository": "https://github.com/leonardopn/toolkit-extra.git",
-	"author": "Leonardo Petta do Nascimento <leonardocps9@gmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"dev": "nodemon",
-		"test": "vitest",
-		"build": "tsc --project tsconfig.build.json",
-		"coverage": "vitest run --coverage",
-		"release": "dotenv release-it"
-	},
-	"devDependencies": {
-		"@types/lodash": "^4.14.202",
-		"@types/node": "^20.10.6",
-		"@types/uuid": "^9.0.7",
-		"@vitest/coverage-v8": "^0.34.6",
-		"dayjs": "^1.11.10",
-		"dotenv-cli": "^7.3.0",
-		"nodemon": "^3.0.1",
-		"npm-check-updates": "^16.14.11",
-		"release-it": "^17.0.1",
-		"ts-node": "^10.9.1",
-		"typescript": "^5.3.2",
-		"vitest": "^0.33.0"
-	},
-	"dependencies": {
-		"lodash": "^4.17.21",
-		"uuid": "^9.0.1",
-		"zod": "^3.22.4"
-	},
-	"types": "dist/@types/index.d.ts",
-	"files": [
-		"/dist"
-	],
-	"main": "./dist/index.js",
-	"exports": {
-		".": "./dist/index.js",
-		"./address": "./dist/modules/Address/index.js",
-		"./array": "./dist/modules/Array/index.js",
-		"./math": "./dist/modules/Math/index.js",
-		"./object": "./dist/modules/Object/index.js",
-		"./random": "./dist/modules/Random/index.js",
-		"./regex": "./dist/modules/Regex/index.js",
-		"./string": "./dist/modules/String/index.js",
-		"./timeout": "./dist/modules/Timeout/index.js",
-		"./uuid": "./dist/modules/uuid/index.js"
-	},
-	"typesVersions": {
-		"*": {
-			"address": [
-				"./dist/@types/modules/Address/index.d.ts"
-			],
-			"array": [
-				"./dist/@types/modules/Array/index.d.ts"
-			],
-			"math": [
-				"./dist/@types/modules/Math/index.d.ts"
-			],
-			"object": [
-				"./dist/@types/modules/Object/index.d.ts"
-			],
-			"random": [
-				"./dist/@types/modules/Random/index.d.ts"
-			],
-			"regex": [
-				"./dist/@types/modules/Regex/index.d.ts"
-			],
-			"string": [
-				"./dist/@types/modules/String/index.d.ts"
-			],
-			"timeout": [
-				"./dist/@types/modules/Timeout/index.d.ts"
-			],
-			"uuid": [
-				"./dist/@types/modules/uuid/index.d.ts"
-			]
-		}
-	},
-	"engines": {
-		"node": ">= 16"
-	},
-	"packageManager": "yarn@4.0.2"
+    "name": "toolkit-extra",
+    "version": "1.1.4",
+    "description": "Biblioteca com funções extras ao javascript que eu sempre preciso em meus projetos.",
+    "repository": "https://github.com/leonardopn/toolkit-extra.git",
+    "author": "Leonardo Petta do Nascimento <leonardocps9@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "nodemon",
+        "test": "vitest",
+        "build": "tsc --project tsconfig.build.json",
+        "coverage": "vitest run --coverage",
+        "release": "dotenv release-it"
+    },
+    "devDependencies": {
+        "@types/lodash": "^4.14.202",
+        "@types/node": "^20.10.6",
+        "@types/uuid": "^9.0.7",
+        "@vitest/coverage-v8": "^0.34.6",
+        "dayjs": "^1.11.10",
+        "dotenv-cli": "^7.3.0",
+        "nodemon": "^3.0.1",
+        "npm-check-updates": "^16.14.11",
+        "release-it": "^17.0.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.3.2",
+        "vitest": "^0.33.0"
+    },
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "uuid": "^9.0.1",
+        "zod": "^3.22.4"
+    },
+    "types": "dist/@types/index.d.ts",
+    "files": [
+        "/dist"
+    ],
+    "main": "./dist/index.js",
+    "exports": {
+        ".": "./dist/index.js",
+        "./address": "./dist/modules/Address/index.js",
+        "./array": "./dist/modules/Array/index.js",
+        "./math": "./dist/modules/Math/index.js",
+        "./object": "./dist/modules/Object/index.js",
+        "./random": "./dist/modules/Random/index.js",
+        "./regex": "./dist/modules/Regex/index.js",
+        "./string": "./dist/modules/String/index.js",
+        "./timeout": "./dist/modules/Timeout/index.js"
+    },
+    "typesVersions": {
+        "*": {
+            "address": [
+                "./dist/@types/modules/Address/index.d.ts"
+            ],
+            "array": [
+                "./dist/@types/modules/Array/index.d.ts"
+            ],
+            "math": [
+                "./dist/@types/modules/Math/index.d.ts"
+            ],
+            "object": [
+                "./dist/@types/modules/Object/index.d.ts"
+            ],
+            "random": [
+                "./dist/@types/modules/Random/index.d.ts"
+            ],
+            "regex": [
+                "./dist/@types/modules/Regex/index.d.ts"
+            ],
+            "string": [
+                "./dist/@types/modules/String/index.d.ts"
+            ],
+            "timeout": [
+                "./dist/@types/modules/Timeout/index.d.ts"
+            ]
+        }
+    },
+    "engines": {
+        "node": ">= 16"
+    },
+    "packageManager": "yarn@4.0.2"
 }

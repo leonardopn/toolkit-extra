@@ -126,8 +126,6 @@ Estes são os módulos e suas respectivas documentações para cada função.
 - **Timeout**
   - [`sleep`](./src/docs/sleep.md) - Função parecida com a função timeout do javascript, porém, retorna uma promise.
   - [`timeoutAsync`](./src/docs/timeoutAsync.md) - Função timeout para aguardar um tempo determinado porém, é assíncrona.
-- **uuid**
-  - [`v4`](./src/docs/uuidv4.md) - Função que gera um UUID v4.
 
 ## :handshake: Contribuição
 
