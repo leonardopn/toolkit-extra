@@ -11,5 +11,6 @@
 		"Module: Address",
 		"Module: UUID"
 	],
-	"editor.inlineSuggest.showToolbar": "onHover"
+	"editor.inlineSuggest.showToolbar": "onHover",
+	"typescript.tsdk": "node_modules/typescript/lib"
 }
